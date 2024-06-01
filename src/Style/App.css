@@ -1,0 +1,120 @@
+.app {
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.calendar {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 2rem;
+}
+
+.calendar-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.calendar-weekdays {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 0.2rem;
+}
+
+.calendar-day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.calendar-day:hover {
+  background-color: #ddd;
+}
+
+.calendar-day.selected {
+  background-color: #333;
+  color: #fff;
+}
+
+.calendar-day.selected .birthday-icon {
+  color: #fff;
+}
+
+.birthday-icon {
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
+
+.birthday-list {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.birthday-list h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.birthday-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.birthday-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem;
+  background-color: #f2f2f2;
+  margin-bottom: 0.2rem;
+  border-radius: 0.2rem;
+}
+
+.birthday-info {
+  flex: 1;
+}
+
+.birthday-info strong {
+  font-size: 1.1rem;
+  margin-right: 0.5rem;
+}
+
+.birthday-info span {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0.2rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+button:hover {
+  color: #f00;
+}
